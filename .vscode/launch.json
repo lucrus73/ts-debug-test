@@ -5,22 +5,24 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug (Attach)",
+            "name": "NON FUNZIONA: Teomdebug (Attach)",
             "port": 9229,
             "request": "attach",
             "cwd": "${workspaceFolder}",
             "sourceMaps": true,
             "skipFiles": ["<node_internals>/**"],
             "type": "node",
+            // "outFiles": ["${workspaceFolder}/dist/**/*.js"],
         },
        {
-           "name": "Run and debug",
+           "name": "NON FUNZIONA: Teomdebug (Esegue e debugga)",
            "program": "${workspaceFolder}/server/index.ts",
            "request": "launch",
            "skipFiles": [
                "<node_internals>/**"
            ],
            "type": "node",
+           // "outFiles": ["${workspaceFolder}/dist/**/*.js"],
            "stopOnEntry": true,
            "runtimeArgs": ["-r", "ts-node/register", "--preserve-symlinks"],
            "runtimeExecutable": "node",

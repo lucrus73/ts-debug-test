@@ -26,6 +26,6 @@
     "baseUrl": "."
 
   },
-  "include": ["server/**/*.ts", "server/api/models/index.ts"],
-  "exclude": ["node_modules", "./test/", "./dist"]
+  "include": ["server/**/*.ts"],
+  "exclude": ["node_modules"]
 }
